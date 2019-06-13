@@ -2,7 +2,12 @@
 	<view class="content">
 		<u-row class="demoRow" align="left" gutter="20">
 			<u-col span="12"><view class="demoCol"> 12 </view></u-col>
-			<u-col span="12"><view class="demoCol"> 12 </view></u-col>
+			<u-col span="12">
+				<u-row class="insRow" gutter="20">
+					<u-col span="12"><view class="demoCol"> 嵌套12 </view></u-col>
+					<u-col span="12"><view class="demoCol"> 嵌套12 </view></u-col>
+				</u-row>
+			</u-col>
 		</u-row>
 		<u-row class="demoRow" align="right" gutter="20">
 			<u-col span="8"><view class="demoCol"> 8 </view></u-col>
