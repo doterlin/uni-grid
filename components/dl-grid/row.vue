@@ -29,11 +29,9 @@
             }
         },
         mounted() {
-			console.log(this)
             this.$children[0].$children.forEach((vm) => { // 遍历 row 中 col，将 gutter 传递给 col
                 vm.gutter = this.gutter
             })
-			console.log('this.$children', this.$children[0].$children)
         }
     }
 </script>

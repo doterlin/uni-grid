@@ -17,16 +17,16 @@
 + offset: 偏移格数
 
 ### 使用步骤
-+ 将本项目中的`components/row.vue`和`components/col.vue`放入你的项目目录.
-+ 在main.js全局注册组件, 如:
++ 导入本组件, 一般目录在`./components/dl-grid`
++ 在main.js全局注册组件, 方便随时调用, 如:
 
 ```javascript
 import Vue from 'vue'
 // 注意引入本组件的路径
-import Row from './components/row.vue'
-import Col from './components/col.vue'
+import Row from './components/dl-grid/row.vue'
+import Col from './components/dl-grid/col.vue'
 
-Vue.component('u-row', Row);
+Vue.component('u-row', Row); //<row>和<col>为H5原生标签, 不能直接用, 可起名<u-row>或者其他的
 Vue.component('u-col', Col);
 ```
 
@@ -71,12 +71,6 @@ Vue.component('u-col', Col);
 			return {
 				title: 'Hello u-grid'
 			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
 		}
 	}
 </script>
